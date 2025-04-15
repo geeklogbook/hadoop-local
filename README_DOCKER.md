@@ -4,10 +4,24 @@
 docker compose up --build
 ```
 
-## 2. Acceder al contenedor hadoop-master
+Reiniciar master si no esta levantado
 
 ```
+docker restart container hadoop-master
+```
+
+## 2. Acceder al contenedor hadoop-master
+
+### 2.1 Ingresa al container
+```
 docker exec -it hadoop-master bash
+```
+
+### 2.2 Incia los servicios de Hadoop
+
+```
+start-dfs.sh
+start-yarn.sh
 ```
 
 ## 3. Descarga archivo y lo envia al cluster

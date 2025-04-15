@@ -1,7 +1,7 @@
 ### 1. Crear red para el cluster de hadoop
 
 ```
-sudo docker network create --driver=bridge hadoop
+docker network create hadoop
 ```
 
 Si la red ya existe la pueden eliminar con
